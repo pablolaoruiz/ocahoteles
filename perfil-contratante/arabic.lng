@@ -1,0 +1,64 @@
+<?PHP
+$txt['charset']='windows-1256';
+$txt['htmldir']='rtl';
+$txt['align']='right';
+
+$txt['PHP_file_size']='ּֽד ַבדבÝ ÊÚֿל ַבֽֿ ַבֳÞױל בדֽׁß PHP';
+$txt['partial_upload']='בד םÊד Êֽדםב ַבדבÝ ַָבßַדב!';
+$txt['no_file']='בד םÊד Êֽדםב ֳם דבÝ!!';
+$txt['extension']='הזÚ ַבדבÝ';
+$txt['file_size']='ּֽד ַבדבÝ';
+$txt['read_file']='בד הÊדßה דה ÝÊֽ ַבדבÝ בבÞֱַֹׁ!';
+$txt['write_file']='בד הÊדßה דה ַבßÊַָֹ Ýם ַבדבÝ!';
+$txt['move_failiur']='בד הÊדßה דה הÞב ַבדבÝ ֵבל זּוÊו!';
+$txt['try_again']='ַבֱַּׁ ַבדַֽזבֹ דֹׁ ֳ־ׁל!';
+$txt['chmod_fail']='בד םÊד ÊÛםםׁ ֳ׀זהַÊ ַבדבÝ, בßה Êד Êֽדםב ַבדבÝ ָהַּֽ!';
+$txt['succes']='דבÝַÊ Êד Êֽדםבוַ ָהַּֽ';
+$txt['error_log']='׃ּב ַבֳ־״ֱַ';
+$txt['submit']='ÊֽדÜÜםב';
+$txt['download']='Þֶַדֹ ַבÊֽדםב';
+$txt['limits']='בַֽÙ ו׀ו ַבÊֽֿםַֿÊ';
+$txt['max_size']='ַבּֽד ַבֳÞױל בבדבÝ';
+$txt['allowed_ext']='ֳהזַÚ ַבדבÝַÊ ַבד׃דזֽ ָוַ';
+$txt['filename']='ַ׃ד ַבדבÝ';
+$txt['fsize']='ַבּֽד';
+$txt['last_moded']='ֲ־ׁ ÊÚֿםב';
+$txt['unwritable']='םָֿז ֳה ַבדּבֿ ַב׀ם ÞדÊ ָÊֽֿםֿו בַ םדßה ַבßÊַָֹ Úבםו זַהß בַ Êדבß ַבֳ׀זהַÊ ַב־ַױֹ ַָבßÊַָֹ Úבםו!';
+$txt['doesnot_exist']='ַבדּבֿ ַב׀ם ÞדÊ ָÊֽֿםֿו Ûםׁ דזּזֿ!';
+$txt['MB']='דםַַָּםÊ';
+$txt['KB']='ßםבזַָםÊ';
+$txt['powered']='דֿÚזד ָÜ';
+$txt['lng_doesnot_exist']='דבÝ ַבבÛֹ ַב׀ם ״בָÊו Ûםׁ דזּזֿ!';
+$txt['lng_fall_default']='ַבּׁזÚ בבÛֹ ַבÚָׁםֹ'; //ו׀ַ ַבדÊÛםׁ םָּ ֳה םֽÊזם Úבל בÛÊß!
+$txt['not_allowed']='Ûםׁ ד׃דזֽ ָו';
+$txt['exceded_limit']='םÊÚֿל ַבֽֿזֿ!';
+$txt['overwrite']='ַבßÊַָֹ ÝזÞ ַבדבÝַÊ ַבדזּזֹֿ¿';
+$txt['file_exists']='Þֿ Êד ַבÚֻזׁ Úבל דבÝ ָו׀ַ ַבַ׃ד! ַבֱַּׁ ֵÚַֹֿ Ê׃דםֹ ַבדבÝ ֻד ַבדַֽזבֹ דֹׁ ֳ־ׁל';
+
+$txt['mail']['head']="Êד ֵׁ׃ַב ו׀ו ַבׁ׃ַבֹ בֵָבַÛß ָדַֽזבֹ Êֽדםב דבÝַÊ בדזÞÚß Úה ״ׁםÞ ַבד׃Ê־ֿד ױַָֽ ַבÜ IP ַבÊַבם:\n";
+$txt['mail']['succeded']="Êד Êֽדםב ַבדבÝַÊ ַבÊַבםֹ ָהַּֽ:\n";
+$txt['mail']['failed']="בד םÊד Êֽדםב ַבדבÝַÊ ַבÊַבםֹ:\n";
+$txt['mail']['subject']='[SFU]ÊÞׁםׁ Êֽדםב ַבדבÝַÊ';
+$txt['mail']['conc']="\n\n--------\nםÊד ֵָבַÛß Úה ו׀ו ַבדַֽזבַÊ בֳהß ÞדÊ ָÊדßםה ׀בß דה דבÝ SFUConfig.php\nבֵבÛֱַ ו׀ו ַב־ַױםֹ Úבםß ÊÛםׁ Þםדֹ ַבדÊÛםׁ \$notify_admin ֵבל ַבÞםדֹ false ַֿ־ב דבÝ SFUConfig.php";
+
+$txt['log_failed']='בד םÊד ÝÊֽ דבÝ ַבדÊַָÚֹ';
+$txt['log_write_failed']='בד ÊÊד ßÊַָֹ ַבָםַהַÊ Ýם דבÝ ַבÊ׃ּםב';
+$txt['log']['failed']='ֵ־ÝַÞ:';
+$txt['log']['succeded']='הַּֽ:';
+
+$txt['pass_intro']='בׁÝÚ ֳם דבÝ ÊֽÊַּ ֵבל ßבדֹ ַבדׁזׁ';
+$txt['password']='ßבדֹ ַבדׁזׁ';
+$txt['pass_submit']='ֵׁ׃ַב';
+$txt['pass_uni']='ßבדֹ ַבדׁזׁ';
+$txt['pass_wrong']='ßבדֹ דׁזׁ ־ַ״ֶֹ!';
+
+$txt['unknown_attr']='Unknown file attribute';
+$txt['unknown_notify']='ַבֱַּׁ ֵָבַÛ ַבדװׁÝ Úה ו׀ו ַבׁ׃ַבֹ.';
+
+$txt['exec_file_exists']='Êד ַבÚֻזׁ Úבל ַבה׃־ֹ ַבדֽזבֹ ֵבל דבÝ הױם ֲדה דה ו׀ַ ַבדבÝ';
+$txt['new_ext_added']='<b>דבַֽÙֹ:</b> Êד ֵײַÝֹ html ז/ֳז txt בבÞֶַדֹ בÚׁײ ַבדבÝַÊ ַבÊם Êד Êֽזםבוַ דה ַבהזÚ exec.';
+$txt['to_download']='בֽÝÙ דבÝ ַײÛ״ Úבםו ַָבׁׂ ַבםדםה ֻד "ֽÝÙ ַבוֿÝ ַָ׃ד"';
+
+$txt['pre_unwritable']='ַבדּבֿ ַבוֿÝ Ûםׁ Þַָב בבßÊַָֹ!';
+$txt['error']='־״ֳ';
+?>

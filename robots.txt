@@ -1,0 +1,5 @@
+User-Agent: *
+ 
+Disallow: /_old
+Disallow: /cron
+Disallow: /docs

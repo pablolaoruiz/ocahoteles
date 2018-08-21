@@ -1,0 +1,25 @@
+ALTER TABLE products ADD servicio VARCHAR(100) NULL;
+
+UPDATE products SET longName = 'Maragogi', servicio = 'Resort' WHERE shortName = '3278';
+UPDATE products SET longName = 'Aldeaduero', servicio = '' WHERE shortName = '10001';
+UPDATE products SET longName = 'Augas Santas', servicio = 'Balneario & Golf' WHERE shortName = '2997';
+UPDATE products SET longName = 'Palacio de Llorea', servicio = 'Spa' WHERE shortName = '3456';
+UPDATE products SET longName = 'Puerta del camino', servicio = '' WHERE shortName = '515';
+UPDATE products SET longName = 'Santo Domingo Plaza', servicio = '' WHERE shortName = '3614';
+UPDATE products SET longName = 'Vila de Allariz', servicio = 'Spa' WHERE shortName = '3074';
+UPDATE products SET longName = 'Justo', servicio = '' WHERE shortName = '10009';
+UPDATE products SET longName = 'Insua', servicio = '' WHERE shortName = '3430';
+UPDATE products SET longName = 'Ipanema', servicio = '' WHERE shortName = '247';
+UPDATE products SET longName = 'Rio Pambre', servicio = 'Balneario' WHERE shortName = '1101';
+UPDATE products SET longName = 'Vermar', servicio = '' WHERE shortName = '71';
+UPDATE products SET longName = 'San Vicente', servicio = '' WHERE shortName = '334';
+UPDATE products SET longName = 'Vila de Sarria', servicio = '' WHERE shortName = '1890';
+UPDATE products SET longName = 'Cruceiro do Galo', servicio = 'Apartamentos' WHERE shortName = '10008';
+UPDATE products SET longName = 'Sete Artes', servicio = 'Boutique' WHERE shortName = '10005';
+UPDATE products SET longName = 'Manzaneda', servicio = 'Estación de Montaña' WHERE shortName = '4117';
+UPDATE products SET longName = 'Bolera Pico', servicio = 'Apartamentos' WHERE shortName = '6594';
+UPDATE products SET longName = 'Portonovo Pico', servicio = 'Apartamentos' WHERE shortName = '2975';
+UPDATE products SET longName = 'Sea View Viveiro', servicio = 'Apartamentos' WHERE shortName = '10007';
+UPDATE products SET longName = 'Casa Reales', servicio = 'Apartamentos' WHERE shortName = '6606';
+UPDATE products SET longName = 'Sanxenxo', servicio = 'Residences' WHERE shortName = '4205';
+UPDATE products SET longName = 'Aldeaduero', servicio = 'Chalets' WHERE shortName = '10003';

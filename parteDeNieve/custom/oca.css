@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*font-family: 'Pragati Narrow', sans-serif;
+font-family: 'Tauri', sans-serif; */
+
+body{
+font-family: 'Pragati Narrow', sans-serif;
+background-color: #E2E2E2;
+background-image:url(../img/bg_01.png);
+color:#454545;}
+
+h5{
+	font-size:22px;}
+
+#logo img{
+	display:block;
+	margin:0 auto;
+	max-width:320px
+	}
+#mainContent{
+	margin:50px 0 }
+.whiteBg{
+	background-color:#FFFFFF;
+	padding:20px;
+	}
+	
+.infoCol h4{
+	display: inline-block;
+	font-size:30px;}
+	
+.acceso{
+	font-size:24px;
+	display:inline-block;
+	padding:6px 10px;
+	margin:2px 10px}
+	
+.tele{
+	font-size:20px;
+	display:inline-block;
+	padding:6px 8px;
+	margin:2px 8px}
+.numbers{
+	display:inline-block;
+	color:#000;
+	background-color:#b2f3ee;	
+	padding:2px 10px;
+	border:#49aba3 solid 1px}
+.kms{
+	display:inline-block;
+	color:#000;
+	background-color:#c5f5a8;	
+	padding:2px 10px;
+	border:#6eab49 solid 1px}
+.nieve{
+	font-size:18px;
+	margin:5px 10px;
+	display:inline-block;
+	padding:0 10px 0 0;
+	border:solid 1px #C1C1C1;}
+.nieveImg{
+	width:40px;
+	height:auto}
+.climaImg{
+	padding-top:6px;
+	width:60px;
+	height:auto}
+.temp{
+	padding:10px 0 0 0;
+	font-size:26px}
+.max{
+	color:#B20002
+	}
+.min{
+	color:#3BB7FF}

@@ -1,0 +1,140 @@
+.h1, h2, h3, h4, h5 {
+    font-weight: 300;
+    margin-bottom: 34px;
+}
+
+.page-header {
+    padding-bottom: 20px;
+}
+
+.content-interior ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.entry-content p {
+    font-size: 1.25em;
+    text-align: justify;
+    font-weight: 300;
+    color: #212121;
+    margin-bottom: 15px;
+    line-height: 1.8em;
+}
+
+.content-interior h2 {
+    margin-bottom: 24px;
+}
+
+.content-interior h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.content-interior h4 {
+    font-weight: 300;
+    font-size: 1.80em;
+    margin-top: 30px;
+}
+.navbar-blog {
+    border: none;
+}
+.menu-menu-header-container {
+
+    .navbar-inverse .navbar-nav>li>a {
+        color: #eee;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: #eee;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar-toggle {
+        border: none;
+    }
+
+    .nav>li>a {
+        padding: 22px 0;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #FFF;
+    }
+
+    .menu-item {
+        margin-left: 20px;
+    }
+    .menu-item:first-child {
+        /*margin-left: 0px;*/
+    }
+
+    .current-menu-item {
+        border-bottom: 4px solid #b4b4b9;
+    }
+}
+.search-form {
+    /*border:1px solid #b4b4b9;*/
+    /*padding: 15px;*/
+}
+
+.search-form span {
+    display: none;
+}
+
+.search-submit {
+    font-size: 1.6em;
+    font-weight: 300;
+    min-height: 72px;
+    margin-left: -4px;
+    margin-top: -9px;
+    width: 18%;
+}
+
+.search-field {
+    padding-left: 20px;
+    border-right: 2px solid #7f7f7f;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #7f7f7f;
+    font-size: 1.6em;
+    height: 72px;
+    font-weight: 300;
+    width: 80%;
+}
+
+.submit {
+    color: #fff;
+    background-color: #7f7f7f;
+    border-color: #727272;
+    border-style: none;
+    padding: 12px 24px;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.autor {
+    margin: 2rem 0;
+}
+
+.img-responsive {
+    min-width: 100%;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    text-align: center;
+}
+a .card-title {
+    margin-top: 28% !important;
+    color: #fff;
+    font-size: 2em !important;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: inline-block;
+    padding: 4%;
+}

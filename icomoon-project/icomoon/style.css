@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?4irdle');
+  src:  url('fonts/icomoon.eot?4irdle#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4irdle') format('truetype'),
+    url('fonts/icomoon.woff?4irdle') format('woff'),
+    url('fonts/icomoon.svg?4irdle#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minus:before {
+  content: "\e928";
+}
+.icon-th-menu:before {
+  content: "\e929";
+}
+.icon-esquiables:before {
+  content: "\e927";
+}
+.icon-telesqui:before {
+  content: "\e924";
+}
+.icon-ski-remontes:before {
+  content: "\e925";
+}
+.icon-exit-door-symbol:before {
+  content: "\e926";
+}
+.icon-clima_1:before {
+  content: "\e91c";
+}
+.icon-clima_2:before {
+  content: "\e91d";
+}
+.icon-clima_3:before {
+  content: "\e91e";
+}
+.icon-clima_4:before {
+  content: "\e91f";
+}
+.icon-clima_5:before {
+  content: "\e920";
+}
+.icon-clima_6:before {
+  content: "\e921";
+}
+.icon-clima_7:before {
+  content: "\e922";
+}
+.icon-clima_8:before {
+  content: "\e923";
+}
+.icon-llave:before {
+  content: "\e90d";
+}
+.icon-piscina:before {
+  content: "\e912";
+}
+.icon-h:before {
+  content: "\e900";
+}
+.icon-bar:before {
+  content: "\e901";
+}
+.icon-cama-doble-p:before {
+  content: "\e902";
+}
+.icon-cama:before {
+  content: "\e903";
+}
+.icon-campana:before {
+  content: "\e904";
+}
+.icon-cigarro:before {
+  content: "\e905";
+}
+.icon-desayuno:before {
+  content: "\e906";
+}
+.icon-estrella-2:before {
+  content: "\e907";
+}
+.icon-estrella:before {
+  content: "\e908";
+}
+.icon-frio:before {
+  content: "\e909";
+}
+.icon-gym:before {
+  content: "\e90a";
+}
+.icon-lavanderia:before {
+  content: "\e90b";
+}
+.icon-limpieza:before {
+  content: "\e90c";
+}
+.icon-microondas:before {
+  content: "\e90e";
+}
+.icon-nevera:before {
+  content: "\e90f";
+}
+.icon-olla:before {
+  content: "\e910";
+}
+.icon-percha:before {
+  content: "\e911";
+}
+.icon-plancha:before {
+  content: "\e913";
+}
+.icon-platos:before {
+  content: "\e914";
+}
+.icon-secador:before {
+  content: "\e915";
+}
+.icon-spa:before {
+  content: "\e916";
+}
+.icon-tenedor-cuchillo:before {
+  content: "\e917";
+}
+.icon-toallas:before {
+  content: "\e918";
+}
+.icon-tv:before {
+  content: "\e919";
+}
+.icon-wifi:before {
+  content: "\e91a";
+}
+.icon-golf:before {
+  content: "\e91b";
+}
+.icon-plus:before {
+  content: "\f067";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-star-o:before {
+  content: "\f006";
+}
+.icon-download:before {
+  content: "\f019";
+}
+.icon-tag:before {
+  content: "\f02b";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-check-circle:before {
+  content: "\f058";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-key:before {
+  content: "\f084";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-phone-square:before {
+  content: "\f098";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-angle-double-up:before {
+  content: "\f102";
+}
+.icon-angle-double-down:before {
+  content: "\f103";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-thermometer-full:before {
+  content: "\f2c7";
+}
+.icon-thermometer-4:before {
+  content: "\f2c7";
+}
+.icon-thermometer-empty:before {
+  content: "\f2cb";
+}

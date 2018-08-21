@@ -1,0 +1,68 @@
+<p>Oca Manzaneda is a sports/tourist Ski and Mountain Resort with various activities throughout all the year. We are surrounded by 2.000 hectares of forest at over 1.500 metres of altitude which creates an unforgettable and a unique destination for leisure or family tourism.</p>
+<p><br>
+</p>
+<p>Besides having several ski slopes, Oca Manzaneda also has numerous <strong>facilities and sports equipment</strong>, such as grass soccer field, tennis courts, go-kart tracks, riding club, mountain bike tracks, heated pool, outdoor multi-sport tracks, multipurpose indoor sports hall with gymnasium, gigantic zip line and multi-adventure park. </p>
+<p>Thanks to our fantastic location you can also go hiking, hill-walking, climbing (climbing-wall), practice archery, golf, etc. </p>
+<p><br>
+</p>
+
+  <br>
+                <p>The official opening hours of the Station are from 10:00 a.m. to 5:30 p.m..</p><p>The Station reserves the right to advance the opening, if the weather conditions allow it
+.</p><br>
+                
+<p><strong>Competitions and events</strong></p>
+<p> •	Galician Alpine Skiing Competition (junior and senior categories)</p>
+<p> •	Celtic-Iberian Bagpipe Band Competition (in memory of Gabino Fernández), first Sunday of August.</p>
+<p><br>
+</p>
+
+<p><strong>Services within a 35 km radius:</strong></p>
+<p>Restaurants, cafeterias, supermarkets, pubs, discos, sports facilities, tourism office, camping, health center (National Social Security Institute), and taxis apart from numerous relevant routes thanks to their cultural, touristic and landscape value. </p>
+<p><br>
+</p>
+<div class="item-inicio" style="margin-bottom:20px;">
+	    <div class="col-xs-12 header">
+		<div class="banda-left"></div>
+		<h3>Webcams</h3>
+	    </div>
+	    <div class="col-xs-12 contenido">
+					<div class="row">
+			<div class="col-md-12">
+			<iframe src="http://ipcamlive.com/player/player.php?alias=582b900edb0f9&autoplay=1&disablevideofit=1&token=2de839f5&debug=1"  width="100%" height="450" frameborder="0" allowfullscreen ></iframe>
+			</div>
+			<div class="col-md-12">
+			<iframe src="http://ipcamlive.com/player/player.php?alias=58387efb7b012&autoplay=1&disablevideofit=1&token=35485088&debug=1"  width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+			</div>
+                       
+			<div class="col-md-12">
+			<iframe src="http://ipcamlive.com/player/player.php?alias=58330ef7a0388&autoplay=1&disablevideofit=1&token=37a85e58&debug=1"  width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+			</div>
+			</div>
+	    </div>
+    
+
+ 
+	</div>
+<script>
+    function actualizar_webcam() {
+      theDate = new Date();
+      url='http://85.91.64.19/manzaneda/readImage.asp?dummy='+ theDate.getTime().toString(10);
+      document.theimage.src = url;
+      // $(".webcam").html('<img src="http://85.91.64.19/manzaneda/readImage.asp?dummy='+ theDate.getTime().toString(10)+'" alt="Imaxen en vivo">');
+  }
+  
+  setInterval(actualizar_webcam, 3000);
+ $(".partenieve").html('<div><strong>Pistas abiertas</strong></div>');
+ $(".partenieve").append('<div>{{ product.partenieve.pistas }}</div>');
+ $(".partenieve").append('<div><strong>Kms esquiables</strong></div>');
+ $(".partenieve").append('<div>{{ product.partenieve.kms }}</div>');
+ $(".partenieve").append('<div>&nbsp;</div>');
+ $(".partenieve").append('<div class="font"><strong>última actualización</strong></div>');
+
+ </script>
+ <div class="borde-meteo col-xs-12">
+     <div id="wf-location"><h3>Webcam CRTVG</h3></div>
+                    <div class="webcam">
+                      <img name="theimage" src="" class="img-responsive" />
+                    </div>
+                  </div>

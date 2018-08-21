@@ -1,0 +1,1 @@
+<?php GestionTemplates::getTmplInclude("tmpl_newsletter","main") ?>

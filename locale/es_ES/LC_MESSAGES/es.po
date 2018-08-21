@@ -1,0 +1,527 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: as\n"
+"POT-Creation-Date: 2017-07-31 16:32+0200\n"
+"PO-Revision-Date: 2017-07-31 16:32+0200\n"
+"Last-Translator: \n"
+"Language-Team: as\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: templates/ocahoteles/agentes\n"
+"X-Poedit-SearchPath-2: templates/ocahoteles/torneos-golf\n"
+"X-Poedit-SearchPath-3: templates/ocahoteles/empleo\n"
+"X-Poedit-SearchPath-4: _libs\n"
+"X-Poedit-SearchPath-5: templates\n"
+"X-Poedit-SearchPathExcluded-0: blog\n"
+
+#: templates/ocahoteles/404/tmpl_normal.inc:6
+msgid "Lo sentimos"
+msgstr ""
+
+#: templates/ocahoteles/agentes/tmpl_normal.inc:6
+#: templates/ocahoteles/main/tmpl_footer.inc:45
+msgid "Agentes"
+msgstr ""
+
+#: templates/ocahoteles/alta-persona/tmpl_normal.inc:22
+#: templates/ocahoteles/contacto/tmpl_normal.inc:14
+msgid "Email"
+msgstr ""
+
+#: templates/ocahoteles/alta-persona/tmpl_normal.inc:26
+msgid "ReEmail"
+msgstr ""
+
+#: templates/ocahoteles/alta-persona/tmpl_normal.inc:29
+msgid "teléfono"
+msgstr ""
+
+#: templates/ocahoteles/alta-persona/tmpl_normal.inc:32
+msgid "DNI"
+msgstr ""
+
+#: templates/ocahoteles/alta-persona/tmpl_normal.inc:35
+msgid "Nombre"
+msgstr ""
+
+#: templates/ocahoteles/alta-persona/tmpl_normal.inc:38
+msgid "Apellidos"
+msgstr ""
+
+#: templates/ocahoteles/alta-persona/tmpl_normal.inc:42
+#: templates/ocahoteles/main/tmpl_newsletter.inc:23
+msgid "Enviar"
+msgstr ""
+
+#: templates/ocahoteles/atencion-al-cliente/tmpl_normal.inc:6
+#: templates/ocahoteles/main/tmpl_footer.inc:39
+msgid "Atención al cliente"
+msgstr ""
+
+#: templates/ocahoteles/bonos-regalo/tmpl_normal.inc:6
+#: templates/ocahoteles/bonos-regalo/tmpl_normal.inc:34
+#: templates/ocahoteles/bonos-regalo/tmpl_normal.inc:51
+#: templates/ocahoteles/bonos-regalo/tmpl_normal.inc:68
+#: templates/ocahoteles/main/tmpl_footer.inc:53
+msgid "BONOS REGALO"
+msgstr ""
+
+#: templates/ocahoteles/boxes/tmpl_hoteles.inc:50
+#: templates/ocahoteles/home/tmpl_normal.inc:19
+#: templates/ocahoteles/home/tmpl_normal.inc:69
+msgid "DESCÚBRELO"
+msgstr ""
+
+#: templates/ocahoteles/boxes/tmpl_ofertas.inc:22
+msgid "RESERVAR"
+msgstr ""
+
+#: templates/ocahoteles/canal-denuncia-sent/tmpl_normal.inc:248
+#: templates/ocahoteles/canal-denuncia/tmpl_normal.inc:6
+#: templates/ocahoteles/main/tmpl_footer.inc:21
+msgid "Canal denuncia"
+msgstr ""
+
+#: templates/ocahoteles/contacto/tmpl_normal.inc:4
+msgid "Contact us"
+msgstr ""
+
+#: templates/ocahoteles/contacto/tmpl_normal.inc:11
+msgid "Name"
+msgstr ""
+
+#: templates/ocahoteles/contacto/tmpl_normal.inc:17
+msgid "Phone"
+msgstr ""
+
+#: templates/ocahoteles/contacto/tmpl_normal.inc:20
+msgid "Suject"
+msgstr ""
+
+#: templates/ocahoteles/contacto/tmpl_normal.inc:23
+msgid "Comments"
+msgstr ""
+
+#: templates/ocahoteles/contacto/tmpl_normal.inc:26
+msgid "Send"
+msgstr ""
+
+#: templates/ocahoteles/duerming/tmpl_normal.inc:6
+#: templates/ocahoteles/main/tmpl_footer.inc:31
+msgid "Duerming"
+msgstr ""
+
+#: templates/ocahoteles/empleo/tmpl_normal.inc:6
+#: templates/ocahoteles/main/tmpl_footer.inc:29
+msgid "Empleo"
+msgstr ""
+
+#: templates/ocahoteles/empresas/tmpl_normal.inc:6
+#: templates/ocahoteles/main/tmpl_footer.inc:46
+msgid "Empresas"
+msgstr ""
+
+#: templates/ocahoteles/home/tmpl_normal.inc:35
+msgid "DESCÚBRELOS"
+msgstr ""
+
+#: templates/ocahoteles/home/tmpl_normal.inc:53
+msgid "APÚNTATE"
+msgstr ""
+
+#: templates/ocahoteles/home/tmpl_normal.inc:85
+msgid "REGÍSTRATE"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/augas-santas/content/golf.inc:8
+msgid "Calendario de Torneos"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/augas-santas/content/torneos-golf.inc:18
+msgid "Buscar"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:26
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:26
+msgid "Temperatura Máx."
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:31
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:31
+msgid "Temperatura Mín."
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:36
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:36
+msgid "Visibilidad"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:41
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:41
+msgid "Accesos"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:56
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:53
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:71
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:98
+msgid "Remontes"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:66
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:108
+msgid "Telesqui"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:103
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:145
+msgid "Km esquiables"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/manzaneda/content/perfil_contratante.inc:126
+#: templates/ocahoteles/hoteles/manzaneda/content/widget_nieve.inc:168
+msgid "Instalaciones abiertas"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/right_sidebar.inc:32
+msgid "Precio"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/right_sidebar.inc:32
+msgid "desde"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/right_sidebar.inc:59
+msgid "Reservas y contacto"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/right_sidebar.inc:72
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:6
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:55
+#: templates/ocahoteles/ofertas/ofertas.inc:27
+msgid "Reservar"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/right_sidebar.inc:80
+#, fuzzy
+#| msgid "Fecha de publicación"
+msgid "Mapa de localización"
+msgstr "Fecha de"
+
+#: templates/ocahoteles/hoteles/right_sidebar.inc:83
+msgid "Ampliar mapa"
+msgstr ""
+
+#: templates/ocahoteles/hoteles/right_sidebar.inc:86
+msgid "Mapa"
+msgstr ""
+
+#: templates/ocahoteles/inscripcion-torneo/tmpl_normal.inc:6
+msgid "Inscripción Torneo de Golf"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_action_premium.inc:6
+#: templates/ocahoteles/main/tmpl_action_premium_v2.inc:6
+#, php-format
+msgid "Benefíciate de un descuento del 8% con tu registro"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_action_premium.inc:7
+#: templates/ocahoteles/main/tmpl_action_premium_v2.inc:7
+#: templates/ocahoteles/main/tmpl_footer.inc:54
+msgid "LIVE OCA"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:25
+msgid "Mejor Precio online garantizado"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:35
+#: templates/ocahoteles/main/tmpl_pop_up_buscador.inc:15
+msgid "Ciudad o Nombre de Hotel"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:42
+msgid "Fecha de llegada"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:46
+#, fuzzy
+#| msgid "Fecha de publicación"
+msgid "Fecha de salida"
+msgstr "Fecha de"
+
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:50
+msgid "Código promocional"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:55
+msgid "buscar"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_buscador_horizontal.inc:60
+msgid "Reservar oferta"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:7
+#: templates/ocahoteles/main/tmpl_footer.inc:28
+msgid "Oca Hotels"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:19
+msgid "Aviso Legal"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:20
+msgid "Política de privacidad"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:26
+msgid "Corporate"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:30
+msgid "Franquicias"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:36
+msgid "Contacto"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:38
+#: templates/ocahoteles/reservas-telefonicas/tmpl_normal.inc:6
+msgid "Reservas telefónicas"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:43
+msgid "Profesionales"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:51
+msgid "Más"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:55
+#: templates/ocahoteles/rsc/tmpl_normal.inc:6
+msgid "RSC"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:56
+msgid "Blog"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_footer.inc:57
+msgid "Sala de Prensa"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_menu.inc:21
+#: templates/ocahoteles/main/tmpl_menu_oferta.inc:28
+msgid "Llámanos"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_menu.inc:45
+#: templates/ocahoteles/main/tmpl_menu_oferta.inc:52
+msgid "Português"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_menu.inc:72
+#: templates/ocahoteles/main/tmpl_menu.inc:107
+#: templates/ocahoteles/main/tmpl_menu_oferta.inc:79
+#: templates/ocahoteles/main/tmpl_menu_oferta.inc:114
+msgid "Español"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_menu.inc:112
+#: templates/ocahoteles/main/tmpl_menu_oferta.inc:119
+msgid "Inglés"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_newsletter.inc:8
+msgid "Subscribase a nuestra"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_newsletter.inc:8
+msgid "Newsletter"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_newsletter.inc:8
+msgid "[ofertas, promociones, novedades ...]"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_newsletter.inc:19
+msgid "Introduzca su email"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_newsletter.inc:32
+msgid "Enviando su información está aceptando las"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_newsletter.inc:32
+msgid "bases legales"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_pestanas.inc:22
+msgid "Destinos"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_pestanas.inc:28
+msgid "Experiencias"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_pestanas.inc:35
+msgid "Bonos Regalo"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_pestanas.inc:43
+msgid "Hoteles"
+msgstr ""
+
+#: templates/ocahoteles/main/tmpl_pestanas.inc:49
+msgid "Ofertas"
+msgstr ""
+
+#: templates/ocahoteles/oferta/tmpl_default.inc:14 oferta/index.php:20
+#: oferta/index.php:21
+msgid "Oferta"
+msgstr ""
+
+#: templates/ocahoteles/oferta/tmpl_default.inc:47
+msgid "DESDE"
+msgstr ""
+
+#: templates/ocahoteles/sala-de-prensa/tmpl_normal.inc:6
+msgid "Sala de prensa"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:57
+msgid "PDF Salidas"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:61
+msgid "PDF Clasificación"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:65
+msgid "PDF Información"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:75
+msgid "Inscripción"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:82
+msgid "INFORMACIÓN"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:90
+msgid "Trofeos"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:97
+msgid "Salidas"
+msgstr ""
+
+#: templates/ocahoteles/torneos-golf/tmpl_torneo.inc:103
+msgid "NOTAS"
+msgstr ""
+
+#: _libs/com/ocahoteles/comun/Urls.php:29
+msgid "salones-de-juegos-iocus"
+msgstr ""
+
+#: _libs/com/ocahoteles/comun/Urls.php:34
+msgid "instalacion-maquinas-de-juego"
+msgstr ""
+
+#: _libs/com/ocahoteles/comun/Urls.php:39
+msgid "apuestas-deportivas"
+msgstr ""
+
+#: _libs/com/ocahoteles/comun/Urls.php:43
+msgid "contacto"
+msgstr ""
+
+#: _libs/com/ocahoteles/comun/Urls.php:48
+msgid "maquinas-de-juego"
+msgstr ""
+
+#: _libs/com/ocahoteles/comun/Urls.php:53
+msgid "ruletas"
+msgstr ""
+
+#: _libs/com/ocahoteles/comun/Urls.php:58
+msgid "unete-a-iocus"
+msgstr ""
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:45
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:112
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:182
+msgid "Título"
+msgstr ""
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:60
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:124
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:191
+msgid "Fecha de publicación"
+msgstr "Fecha de"
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:63
+msgid "Límite adminisión"
+msgstr ""
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:66
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:127
+msgid "Anuncio"
+msgstr ""
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:69
+msgid "Pliego"
+msgstr ""
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:130
+msgid "Pliegos"
+msgstr ""
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:133
+msgid "Proyecto"
+msgstr ""
+
+#: _libs/com/ocahoteles/secciones/hoteles/contenido/manzaneda/perfil_contratante_es.php:194
+msgid "Documento"
+msgstr ""
+
+#: alta-persona/index.php:15 alta-persona/index.php:16
+msgid "Alta de personas - Colectivos"
+msgstr ""
+
+#: index.php:10
+msgid "Oca Hotels. Hoteles en Galicia, Asturias, Castilla León y Brasil."
+msgstr ""
+
+#: index.php:11
+msgid ""
+"Oca Hoteles. Alojamiento, SPA, golf y Estación de Montaña en Galicia, "
+"Asturias, Castilla y León y Brasil."
+msgstr ""
+
+#: services/ajax.php:93
+msgid ""
+"Gracias por registrarte. Sólo te escribiremos para ofrecerte nuestras "
+"mejores ofertas y que no te pierdas ninguna."
+msgstr ""
+
+#: services/ajax.php:95
+msgid "Opss!! Error, prueba más tarde"
+msgstr ""
+
+#: torneo-golf/index.php:21 torneo-golf/index.php:22
+msgid "Torneos de Golf"
+msgstr ""

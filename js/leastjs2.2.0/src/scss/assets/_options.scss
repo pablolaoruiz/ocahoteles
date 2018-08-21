@@ -1,0 +1,34 @@
+/**
+*** least.js 2
+*** Author: Kamil Czujowski - @kamilczujowski
+*** Version: 2.2.0
+*** Made with ♥	in Hamburg, Germany.
+*** http://kamilczujowski.de
+**/
+
+/* @group Options */
+
+	/* @group Master */
+	$path-img: '../images/';
+	$thumbnail-text: false; /* enable (true) or disable (false) thumbnails title text */
+	$outline: true; /* enable (true) or disable (false) thumbnails border */
+	/* @end */
+
+	/* @group Vars: Colors */
+	$color-black: #000;
+	$color-white: #fff;
+	$color-gray: #7f7f7f;
+	$color-gray-light: #b4b4b9;
+	$color-creem: #b4b4b9;
+	/* @end */
+
+	/* @group Gallery-Fullscreen */
+	$max-fullscreen-size: 960px; /* default size for fullscreen preview  */
+	/* @end */
+
+	/* @group Gallery-Thumbails */
+	$thumbnail-size-width: 240px; /* default "width" size for thumbnails */
+	$thumbnail-size-height: 150px; /* default "height" size for thumbnails */
+	/* @end */
+
+/* @end */

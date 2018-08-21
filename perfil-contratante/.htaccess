@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Perfil Contratante OCA MANZANEDA"
+AuthUserFile /home/galeriaoou/oca/perfil-contratante/.htpasswd
+Require valid-user

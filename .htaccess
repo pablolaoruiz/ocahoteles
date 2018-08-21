@@ -1,0 +1,452 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/javascript "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+<ifmodule mod_headers.c>
+<filesmatch "\.(ico|jpe?g|png|gif|swf)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesmatch>
+<filesmatch "\.(css)$">
+Header set Cache-Control "max-age=604800, public"
+</filesmatch>
+<filesmatch "\.(js)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesmatch>
+<filesmatch "\.(x?html?|php)$">
+Header set Cache-Control "max-age=600, private, must-revalidate"
+</filesmatch>
+</ifmodule>
+
+IndexOptions +Charset=UTF-8
+
+ErrorDocument 404 /404.php
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+# Options +SymLinksIfOwnerMatch
+  RewriteEngine On
+# RewriteBase /
+# Protect files and directories from prying eyes.
+<FilesMatch "\.(engine|inc|inc|info|install|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl|svn-base)$|^(code-style\.pl|Entries.*|Repository|Root|Tag|Template|all-wcprops|entries|format)$">
+  Order allow,deny
+</FilesMatch>
+# match any URL with www and rewrite it to http without the www
+
+# match any URL with www and rewrite it to https without the www
+    RewriteCond %{HTTP_HOST} ^(www\.)(.*) [NC]
+    RewriteRule (.*) https://%2%{REQUEST_URI} [R=301,L]
+
+# match non https and redirect to https
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+    
+
+
+#Para página detalle de oferta
+#RewriteRule  ^oferta/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$     oferta/index.php?id_oferta=$1
+
+RewriteRule  ^hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/torneo-golf/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$             torneo-golf/index.php?torneo=$6&hotel=$4&id=$7
+# /<idioma>/hoteles/espana/provincia/ciudad/oca-nombrehotel/
+RewriteRule  ^hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/?$                                                        hotel/index.php?hotel=$4
+
+#sección de hotel
+RewriteRule  ^hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                                         hotel/index.php?hotel=$4&seccion=$5
+
+#oferta hotel
+RewriteRule  ^hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/oferta/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                  oferta/index.php?id_oferta=$6
+
+#Resultado compra forfait
+RewriteRule  ^hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$         hotel/forfait.php?hotel=$4&seccion=$5&id=$6&email=$7
+
+#detalle de torneo de golf
+
+
+#RewriteRule  ^([A-Za-z0-9-]+)?$                                             hotel/index.php?hotel=$1
+#para la url de resultado de compra forfait
+#RewriteRule  ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                             hotel/forfait.php?hotel=$1&seccion=$2&id=$3&email=$4
+#RewriteRule  ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                             hotel/index.php?hotel=$1&seccion=$2
+RewriteRule  ^([A-Za-z0-9-]+)/ofertas/?$                                    hotel/index.php?hotel=$1&seccion=ofertas
+#RewriteRule  ^([A-Za-z0-9-]+)/golf/torneo-golf/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$           torneo-golf/index.php?torneo=$3
+
+
+# 2018 INGLÉS #
+
+RewriteRule ^en/reservas-telefonicas/  /reservas-telefonicas/index.php?lang=en
+
+RewriteRule ^en/liveoca/  /liveoca/index.php?lang=en
+
+RewriteRule ^en/aviso-legal/  /aviso-legal/index.php?lang=en
+
+RewriteRule ^en/politica-de-privacidad/  /politica-de-privacidad/index.php?lang=en
+
+RewriteRule ^en/canal-denuncia/  /canal-denuncia/index.php?lang=en
+
+RewriteRule ^en/cookies/  /cookies/index.php?lang=en
+
+RewriteRule ^en/oca-hotels/  /oca-hotels/index.php?lang=en
+
+RewriteRule ^en/empleo/  /empleo/index.php?lang=en
+
+RewriteRule ^en/franquicias/  /franquicias/index.php?lang=en
+
+RewriteRule ^en/duerming/  /duerming/index.php?lang=en
+
+RewriteRule ^en/atencion-al-cliente/  /atencion-al-cliente/index.php?lang=en
+
+RewriteRule ^en/agentes/  /agentes/index.php?lang=en
+
+RewriteRule ^en/empresas/  /empresas/index.php?lang=en
+
+RewriteRule ^en/bonos-regalo/  /bonos-regalo/index.php?lang=en
+
+RewriteRule ^en/rsc/  /rsc/index.php?lang=en
+
+RewriteRule ^en/sala-de-prensa/  /sala-de-prensa/index.php?lang=en
+
+# inglés
+#RewriteRule  ^en/([A-Za-z0-9-]+)?$                   hotel/index.php?hotel=$1&lang=en
+#RewriteRule  ^en/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$   hotel/index.php?hotel=$1&seccion=$2&lang=en
+
+
+RewriteRule  ^en/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/?$                          hotel/index.php?hotel=$4&lang=en
+RewriteRule  ^en/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$            hotel/index.php?hotel=$4&seccion=$5&lang=en
+
+#oferta hotel
+RewriteRule  ^en/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/oferta/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                  oferta/index.php?id_oferta=$6&lang=en
+
+
+
+RewriteRule  ^en/                                                           index.php?lang=en
+
+
+
+
+#PORTUGUES
+RewriteRule  ^pt/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/?$                          hotel/index.php?hotel=$4&lang=pt
+RewriteRule  ^pt/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$            hotel/index.php?hotel=$4&seccion=$5&lang=pt
+
+#oferta hotel
+RewriteRule  ^pt/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/oferta/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                  oferta/index.php?id_oferta=$6&lang=pt
+
+
+RewriteRule  ^pt/                                                           index.php?lang=pt
+
+
+#CATALÁN
+RewriteRule  ^ca/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/?$                          hotel/index.php?hotel=$4&lang=ca
+RewriteRule  ^ca/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$            hotel/index.php?hotel=$4&seccion=$5&lang=ca
+
+#oferta hotel
+RewriteRule  ^ca/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/oferta/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                  oferta/index.php?id_oferta=$6&lang=ca
+
+RewriteRule  ^ca/                                                           index.php?lang=ca
+
+
+#gallego
+RewriteRule  ^gl/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/?$                          hotel/index.php?hotel=$4&lang=gl
+RewriteRule  ^gl/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$            hotel/index.php?hotel=$4&seccion=$5&lang=gl
+
+#oferta hotel
+RewriteRule  ^gl/hoteles/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/oca-([A-Za-z0-9-]+)/oferta/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$                  oferta/index.php?id_oferta=$6&lang=gl
+
+RewriteRule  ^gl/                                                           index.php?lang=gl
+
+
+RewriteRule  ^destinos/a-coruna/?$                                          a-coruna/index.php
+RewriteRule  ^destinos/asturias/?$                                          asturias/index.php
+RewriteRule  ^destinos/castilla-leon/?$                                     castilla-leon/index.php
+RewriteRule  ^destinos/lugo/?$                                              lugo/index.php
+RewriteRule  ^destinos/ourense/?$                                           ourense/index.php
+RewriteRule  ^destinos/pontevedra/?$                                        pontevedra/index.php
+RewriteRule  ^experiencias/camino-de-santiago/?$                            camino-de-santiago/index.php
+RewriteRule  ^experiencias/bodas-celebraciones/?$                            bodas-celebraciones/index.php
+RewriteRule  ^experiencias/playa/?$                                          playa/index.php
+RewriteRule  ^experiencias/golf/?$                                           golf/index.php
+RewriteRule  ^experiencias/bodas-celebraciones/?$                             bodas-celebraciones/index.php
+RewriteRule  ^experiencias/spa-salud/?$                                       salud-balnearios/index.php
+RewriteRule  ^experiencias/turismo-rural/?$                                   turismo-rural/index.php
+#Para el alta de personas en colectivos orden alfabetico
+
+RewriteRule  ^agafanoca/?$                                    alta-persona/index.php?colectivo=AGAFANOCA
+RewriteRule  ^alumni/?$                                    alta-persona/index.php?colectivo=alumni
+RewriteRule  ^candelas/?$                                    alta-persona/index.php?colectivo=candelas
+RewriteRule  ^clubvdoca/?$                                    alta-persona/index.php?colectivo=CLUBVDOCA
+RewriteRule  ^cobga/?$                                        alta-persona/index.php?colectivo=COBGA
+RewriteRule  ^coetilugo/?$                                    alta-persona/index.php?colectivo=coetilugo
+RewriteRule  ^coitalugo/?$                                    alta-persona/index.php?colectivo=coitalugo
+RewriteRule  ^copgalicia/?$                                   alta-persona/index.php?colectivo=copgalicia
+RewriteRule  ^copoga/?$                                       alta-persona/index.php?colectivo=copoga
+RewriteRule  ^pepsi/?$                                        alta-persona/index.php?colectivo=PEPSI
+RewriteRule  ^aecl/?$                                         alta-persona/index.php?colectivo=ECLOCA
+RewriteRule  ^ecloca/?$                                         alta-persona/index.php?colectivo=ECLOCA
+RewriteRule  ^familiaoca/?$                                   alta-persona/index.php?colectivo=FAMILIAOCA
+RewriteRule  ^fgc/?$                                          alta-persona/index.php?colectivo=FGC
+RewriteRule  ^fonsislava/?$                                   alta-persona/index.php?colectivo=FONSISLAVA
+RewriteRule  ^futuver/?$                                      alta-persona/index.php?colectivo=futuver
+RewriteRule  ^gerpac/?$                                       alta-persona/index.php?colectivo=GERPAC
+RewriteRule  ^icoiig/?$                                       alta-persona/index.php?colectivo=ICOIIGOCA
+RewriteRule  ^lar/?$                                       alta-persona/index.php?colectivo=LAR
+RewriteRule  ^live-oca/?$                                     alta-persona/index.php?colectivo=LIVEOCA
+RewriteRule  ^vodafone/?$                                     alta-persona/index.php?colectivo=CLUBVDOCA
+RewriteRule  ^soyoca/?$                                     alta-persona/index.php?colectivo=OCA
+RewriteRule  ^anpa-picarinos/?$                               alta-persona/index.php?colectivo=OCAPICA
+RewriteRule  ^egarsat/?$                                      alta-persona/index.php?colectivo=EGAOCA
+RewriteRule  ^rcnpoca/?$                                      alta-persona/index.php?colectivo=RCNPOCA
+RewriteRule  ^renault/?$                                      alta-persona/index.php?colectivo=RENAULT
+RewriteRule  ^thyssenkrupp/?$                                 alta-persona/index.php?colectivo=thyssenkrupp
+RewriteRule  ^futuver/?$                                      alta-persona/index.php?colectivo=futuver
+RewriteRule  ^golfgijon/?$                                      alta-persona/index.php?colectivo=golfgijon
+RewriteRule  ^grupotsk/?$                                      alta-persona/index.php?colectivo=grupotsk
+RewriteRule  ^rgcc/?$                                      alta-persona/index.php?colectivo=rgcc
+RewriteRule  ^aytogijon/?$                                      alta-persona/index.php?colectivo=aytogijon
+RewriteRule  ^vgcorporacion/?$                                      alta-persona/index.php?colectivo=vgcorporacion
+RewriteRule  ^clubemociona/?$                                      alta-persona/index.php?colectivo=clubemociona
+RewriteRule  ^rcgcastiello/?$                                      alta-persona/index.php?colectivo=rcgcastiello
+RewriteRule  ^disashop/?$                                      alta-persona/index.php?colectivo=disashop
+RewriteRule  ^icomem/?$                                      alta-persona/index.php?colectivo=icomem
+RewriteRule  ^icoec/?$                                      alta-persona/index.php?colectivo=icoec
+RewriteRule  ^mossos/?$                                      alta-persona/index.php?colectivo=mossos
+RewriteRule  ^AEDHOCA/?$                                      alta-persona/index.php?colectivo=AEDHOCA
+RewriteRule  ^PAWTEAM/?$                                      alta-persona/index.php?colectivo=PAWTEAM
+RewriteRule  ^FINSA/?$                                      alta-persona/index.php?colectivo=FINSA
+RewriteRule  ^veranoca/?$                                      alta-persona/index.php?colectivo=VERANOCA
+RewriteRule  ^VERANOCA/?$                                      alta-persona/index.php?colectivo=VERANOCA
+RewriteRule  ^CEPEIG/?$                                      alta-persona/index.php?colectivo=CEPEIG
+RewriteRule  ^UGTGALICIA/?$                                      alta-persona/index.php?colectivo=UGTGALICIA
+RewriteRule  ^CAMBRILS/?$                                      alta-persona/index.php?colectivo=CAMBRILS
+RewriteRule  ^GENCAT/?$                                      alta-persona/index.php?colectivo=GENCAT
+RewriteRule  ^COGAMI/?$                                      alta-persona/index.php?colectivo=COGAMI
+RewriteRule  ^CPHDG/?$                                      alta-persona/index.php?colectivo=CPHDG
+RewriteRule  ^FUTGAL/?$                                      alta-persona/index.php?colectivo=FUTGAL
+RewriteRule  ^COEAC/?$                                      alta-persona/index.php?colectivo=COEAC
+RewriteRule  ^MEDIAMARKT/?$                                      alta-persona/index.php?colectivo=MEDIAMARKT
+
+#redirects 2018
+RedirectMatch 301 ^/Santo-domingo-plaza/el-hotel$ http://ocahotels.com/hoteles/espana/asturias/oviedo/oca-santo-domingo-plaza/
+
+RedirectMatch 301 ^/allariz/(.*)$ http://ocahotels.com/hoteles/espana/ourense/allariz/oca-allariz/
+
+RedirectMatch 301 ^/balnearioaugassantas/(.*)$ http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/
+
+RedirectMatch 301 ^/es/insua-hotel-restaurante/$ http://ocahotels.com/hoteles/espana/a-coruna/cee/oca-insua/
+
+RedirectMatch 301 	^/h/2997/el-hotel$			 http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/
+
+RedirectMatch 301 	^/h/2997/inicio$			 http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/
+
+RedirectMatch 301 	^/h/2997/golf$			http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/golf
+
+RedirectMatch 301 	^/nuestros-hoteles/3278/grand-oca-maragogi-beach--leisure-resort$			http://ocahotels.com/hoteles/brasil/maragogi/alagoas/oca-maragogi/
+
+RedirectMatch 301 	^/nuestros-hoteles/2997/oca-augas-santas-balneario-golf-resort$			 http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/
+
+RedirectMatch 301 	^/puerta-del-camino/el-hotel$			 http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+
+RedirectMatch 301 	^/san-vicente/inicio$			http://ocahotels.com/hoteles/espana/pontevedra/o-grove/oca-san-vicente/
+
+RedirectMatch 301 	^/hotel-oca-aldeaduero/inicio$			http://ocahotels.com/hoteles/espana/castilla-y-leon/salamanca/oca-hotel-oca-aldeaduero/
+
+RedirectMatch 301 	^/santo-domingo-plaza/inicio$			http://ocahotels.com/hoteles/espana/asturias/oviedo/oca-santo-domingo-plaza/
+
+RedirectMatch 301 	^/nuestros-hoteles/1890/oca-villa-de-sarria-hotel$			http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+
+RedirectMatch 301 	^/nuestros-hoteles/4117/estacion-de-montaa-oca-nova-manzaneda$			http://ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/
+
+RedirectMatch 301 	^/maragogi/inicio$			http://ocahotels.com/hoteles/brasil/maragogi/alagoas/oca-maragogi/
+
+RedirectMatch 301 	^/maragogi/home/$			http://ocahotels.com/en/hoteles/brasil/maragogi/alagoas/oca-maragogi/
+
+RedirectMatch 301 	^/puerta-del-camino/inicio$			http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+
+RedirectMatch 301 	^/hoteles-apartamentos-oca/1890/hotel-duerming-villa-de-sarria$			http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+
+RedirectMatch 301 ^/rio-pambre/inicio/(.*)$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+RedirectMatch 301 ^/ipanema/es/(.*)$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
+
+RedirectMatch 301 ^/ipanema/en/(.*)$ http://ocahotels.com/en/hoteles/espana/pontevedra/vigo/oca-ipanema/
+RedirectMatch 301 ^/ipanema/(.*)$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
+
+
+#redirecciones originales
+####
+RedirectMatch 301 ^/augas-santas/golf/$ http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/golf
+RedirectMatch 301 ^/augas-santas/golf$ http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/golf
+
+RedirectMatch 301 ^/augas-santas/$ http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas
+RedirectMatch 301 ^/augas-santas$ http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas
+
+
+
+RedirectMatch 301 ^/augas-santas/ http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas?
+
+RedirectMatch 301 ^/maragogi/$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
+RedirectMatch 301 ^/maragogi$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
+RedirectMatch 301 /maragogi/$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
+RedirectMatch 301 /maragogi$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
+
+RedirectMatch 301 ^/ipanema/$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
+RedirectMatch 301 ^/ipanema$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
+RedirectMatch 301 /ipanema/$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
+RedirectMatch 301 /ipanema$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
+
+RedirectMatch 301 ^/justo/el-hotel$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/
+RedirectMatch 301 /justo/el-hotel$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/
+
+RedirectMatch 301 ^/justo/galeria$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/
+RedirectMatch 301 /justo/galeria$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/
+
+RedirectMatch 301 ^/santo-domingo-plaza$ http://www.ocahotels.com/hoteles/espana/asturias/oviedo/oca-santo-domingo-plaza/
+RedirectMatch 301 /santo-domingo-plaza$ http://www.ocahotels.com/hoteles/espana/asturias/oviedo/oca-santo-domingo-plaza/
+
+RedirectMatch 301 ^/santo-domingo-plaza/el-hotel$ http://www.ocahotels.com/hoteles/espana/asturias/oviedo/oca-santo-domingo-plaza/
+RedirectMatch 301 /santo-domingo-plaza/el-hotel$ http://www.ocahotels.com/hoteles/espana/asturias/oviedo/oca-santo-domingo-plaza/
+
+RedirectMatch 301 http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-portonovo-pico/ofertas http://ocahotels.com/hoteles/espana/pontevedra/36960sanxenxo/oca-portonovo-pico/ofertas
+
+
+
+RedirectMatch 301 ^oca/contacto http://ocahotels.com/
+RedirectMatch 301 /oca/contacto http://ocahotels.com/
+
+RedirectMatch 301 ^oca/aviso-legal http://ocahotels.com/aviso-legal
+RedirectMatch 301 /oca/aviso-legal http://ocahotels.com/aviso-legal
+
+
+
+RedirectMatch 301 ^/principal.php http://ocahotels.com/
+RedirectMatch 301 /principal.php http://ocahotels.com/
+
+
+
+RedirectMatch 301 ^/hotelocabalnearioriopambre$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+RedirectMatch 301 /hotelocabalnearioriopambre$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+RedirectMatch 301 ^/hotelocabalnearioriopambre/Contacto/$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+RedirectMatch 301 /hotelocabalnearioriopambre/Contacto/$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+RedirectMatch 301 ^/hotelocabalnearioriopambre/Contacto/index.html$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+RedirectMatch 301 /hotelocabalnearioriopambre/Contacto/index.html$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+
+RedirectMatch 301 ^/vermar/(.*)$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-vermar/
+RedirectMatch 301 ^/vermar$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-vermar/
+
+RedirectMatch 301 ^/chalets-rurales-aldeaduero$ http://ocahotels.com/hoteles/espana/castilla-y-leon/salamanca/oca-chalets-rurales-aldeaduero/
+RedirectMatch 301 ^/chalets-rurales-aldeaduero$ http://ocahotels.com/hoteles/espana/castilla-y-leon/salamanca/oca-chalets-rurales-aldeaduero/
+
+
+RedirectMatch 301 ^/oca/(.*)$ http://ocahotels.com/
+RedirectMatch 301 /oca/(.*)$ http://ocahotels.com/
+
+RedirectMatch 301 ^/ofertas/(.*)$ http://ocahotels.com/#ofertas
+RedirectMatch 301 ^/ofertas$ http://ocahotels.com/#ofertas
+
+RedirectMatch 301 ^/destinos$ http://ocahotels.com/#destinos
+RedirectMatch 301 ^/experiencias$ http://ocahotels.com/#experiencias
+RedirectMatch 301 ^/bonos$ http://ocahotels.com/#bonos
+
+RedirectMatch 301 ^/bonos$ http://ocahotels.com/bonos-regalo
+RedirectMatch 301 ^/manzaneda$ http://ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/
+
+RedirectMatch 301 ^/villa-de-sarria$ http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+RedirectMatch 301 ^/villa-de-sarria/(.*)$ http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+RedirectMatch 301 ^/oca-villa-de-sarria-hotel$ http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+
+RedirectMatch 301 ^/hotelocavilladesarria/(.*)$ http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+
+RedirectMatch 301 	^/h/1890/inicio$			 http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+
+RedirectMatch 301 ^/casas-reales(.*)$ http://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-casas-reales/
+
+RedirectMatch 301 ^/insua(.*)$ http://www.ocahotels.com/hoteles/espana/a-coruna/cee/oca-insua/
+
+
+RedirectMatch 301 ^/rio-pambre$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+RedirectMatch 301 /rio-pambre$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+RedirectMatch 301 ^/hotel-oca-aldeaduero$ http://ocahotels.com/hoteles/espana/castilla-y-leon/salamanca/oca-hotel-oca-aldeaduero/
+
+RedirectMatch 301 /hotel-oca-aldeaduero$ http://ocahotels.com/hoteles/espana/castilla-y-leon/salamanca/oca-hotel-oca-aldeaduero/
+
+RedirectMatch 301 ^/rio-pambre/inicio$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+RedirectMatch 301 /rio-pambre/inicio$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+
+RedirectMatch 301 ^/allariz$ http://ocahotels.com/hoteles/espana/ourense/allariz/oca-allariz/
+
+RedirectMatch 301 /allariz$ http://ocahotels.com/hoteles/espana/ourense/allariz/oca-allariz/
+
+RedirectMatch 301 ^/portonovo-pico2$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-portonovo-pico2/
+RedirectMatch 301 /portonovo-pico2$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-portonovo-pico2/
+
+RedirectMatch 301 ^/portonovo-pico$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-portonovo-pico/
+RedirectMatch 301 /portonovo-pico$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-portonovo-pico/
+
+
+RedirectMatch 301 ^/sanxenxo-residence$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
+RedirectMatch 301 /sanxenxo-residence$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
+
+RedirectMatch 301 ^/sete-artes$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/
+RedirectMatch 301 /sete-artes$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/
+
+RedirectMatch 301 ^/nuestros-hoteles$ http://ocahotels.com/#hoteles
+RedirectMatch 301 /nuestros-hoteles$ http://ocahotels.com/#hoteles
+
+RedirectMatch 301 ^/hoteles$ http://ocahotels.com/#hoteles
+RedirectMatch 301 /hoteles$ http://ocahotels.com/#hoteles
+
+RedirectMatch 301 ^/manzaneda/(.*)$ http://ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/
+
+
+
+RedirectMatch 301 /apartamentos-cruceiro-do-galo$ http://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-apartamentos-cruceiro-do-galo/
+RedirectMatch 301 ^/apartamentos-cruceiro-do-galo$ http://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-apartamentos-cruceiro-do-galo/
+
+RedirectMatch 301 ^/san-vicente$ http://ocahotels.com/hoteles/espana/pontevedra/o-grove/oca-san-vicente/
+RedirectMatch 301 /san-vicente$  http://ocahotels.com/hoteles/espana/pontevedra/o-grove/oca-san-vicente/
+
+RedirectMatch 301 ^/puerta-del-camino$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+RedirectMatch 301 /puerta-del-camino$  http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+
+RedirectMatch 301 ^/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/4117/(.*)$ http://www.ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda
+
+RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/golf_competiciones.php             http://www.ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/torneos-golf
+RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/golf_elcampo.php           http://www.ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/golf
+
+#301 Redirect Entire Directory.
+RewriteRule  ^/hotelocajusto/(.*)$ http://www.ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/$1 [R=301,NC,L]
+
+
+RedirectMatch 301 ^/apartamentos-seaview-viveiro http://ocahotels.com/hoteles/espana/lugo/viveiro/oca-apartamentos-seaview-viveiro/
+
+RedirectMatch 301 ^/h/515/inicio http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+
+RedirectMatch 301 ^/palacio-llorea http://ocahotels.com/hoteles/espana/asturias/gijon/oca-palacio-llorea/
+
+
+RedirectMatch 301 ^/hotelocajusto/(.*)$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/
+RedirectMatch 301 ^/hotelocajusto$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/
+
+
+
+
+
+
+</IfModule>

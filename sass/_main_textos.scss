@@ -1,0 +1,74 @@
+$i: 10;
+@while $i < 100 {
+  .txt-0#{$i}  { font-size: #{'0.'}#{$i}em}
+  .txt-1#{$i}  { font-size: #{'1.'}#{$i}em}
+  .txt-2#{$i}  { font-size: #{'2.'}#{$i}em}
+  .txt-3#{$i}  { font-size: #{'3.'}#{$i}em}
+  .txt-4#{$i}  { font-size: #{'4.'}#{$i}em}
+  $i: $i  + 10;
+}
+
+.txt-100 { font-size: 1em}
+.txt-200 { font-size: 2em}
+.txt-300 { font-size: 3em}
+.txt-400 { font-size: 4em}
+.txt-500 { font-size: 5em}
+
+
+.font-thin {
+    font-weight: 100;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-italic {
+    font-style: italic !important;
+}
+
+.txt-a-c {
+    text-align: center;
+}
+
+.txt-a-r {
+    text-align: right;
+}
+
+.txt-a-l {
+    text-align: left;
+}
+
+@media (max-width: 539px) { 
+    .txt-a-c-xs {
+        text-align: center;
+    }
+
+    .txt-a-r-xs {
+        text-align: right;
+    }
+
+    .txt-a-l-xs {
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px) { 
+    .txt-a-c-md {
+        text-align: center;
+    }
+
+    .txt-a-r-md {
+        text-align: right;
+    }
+
+    .txt-a-l-md {
+        text-align: left;
+    }
+}
+
+
