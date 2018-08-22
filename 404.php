@@ -7,7 +7,7 @@
     $tmplCuerpo = "tmpl_normal";
     $seccion = "404";
 
-    $class_menu = "meddddnu-interior";
+    $class_menu = "menu-interior";
     $titulo =  "404";
     $descripcion =   "404";
 
