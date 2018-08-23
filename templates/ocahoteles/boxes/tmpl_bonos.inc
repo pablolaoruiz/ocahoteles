@@ -1,4 +1,5 @@
 <?php 
+
 // inicializar idioma
 $language = '';
 if(isset($_REQUEST['language'])) {

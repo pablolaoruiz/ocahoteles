@@ -19,18 +19,32 @@ if($language=='en_GB') {
 ?><style type="text/css">
     
    .pet{
-    text-align: left;
+    text-align: center;
     position: absolute;
     right: 0;
     bottom: 0;
     }
     .pet img{
         max-width: 140px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .bonosBadge{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+    .bonosBadge img{
+        max-width: 140px;
+          display: block;
+        margin: 0 auto;
     }
 
 @media (min-width: 576px) { 
     .pet{
-    text-align: left;
+    text-align: center;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -38,41 +52,81 @@ if($language=='en_GB') {
     .pet img{
         max-width: 130px;
     }
+    
+       .bonosBadge{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+    .bonosBadge img{
+        max-width: 130px;
+    }
 }
 
 @media (min-width: 768px) { 
 .pet{
-    text-align: left;
+    text-align: center;
     position: absolute;
     right: 0;
     bottom: 0;
     }
      .pet img{
         max-width: 160px;
-    }}
+    }
+.bonosBadge{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+     .bonosBadge img{
+        max-width: 160px;
+    }
+}
 
 
 @media (min-width: 992px) {  
 .pet{
-    text-align: left;
+    text-align: center;
     position: absolute;
     right: 0;
     bottom: 0;
     }
     .pet img{
         max-width: 120px;
-    }}
+    }
+.bonosBadge{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+    .bonosBadge img{
+        max-width: 120px;
+    }
+}
 
 @media (min-width: 1200px) { 
       .pet{
-    text-align: left;
+    text-align: center;
     position: absolute;
    left: 72%;
    top: 63%;
     }
         .pet img{
         max-width: 140px;
-    }}
+    }
+      .bonosBadge{
+    text-align: center;
+    position: absolute;
+   left: 3%;
+   top: 63%;
+    }
+        .bonosBadge img{
+        max-width: 140px;
+    }
+}
 
 
 
@@ -119,17 +173,27 @@ if($language=='en_GB') {
 <!-- PET FRIENDLY BADGE -->
  <?php if ($hotel['petfriendly'] == 1){
                if ($hotel['duerming'] == 1){
-                   ?>    <div class="col-xs-12 pet"><img src="https://ocahotels.com/images/duerming-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'>
+                   ?>    <div class="col-xs-6 col-lg-3 pet"><img src="https://ocahotels.com/images/duerming-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'>
             </div><?php
                }
                else{ ?> 
-                   <div class="col-xs-12 pet"><img src="https://ocahotels.com/images/oca-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'>
+                   <div class="col-xs-6 col-lg-3 pet"><img src="https://ocahotels.com/images/oca-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'>
             </div><?php
                    
                    
                }?>
           <?php }?>
 <!-- PET FRIENDLY BADGE ENDS -->
+
+<!-- bonos regalo BADGE -->
+ <?php if ($hotel['bonosregalo'] == 1){
+     
+     ?>
+
+<div class="col-xs-6 col-lg-3 bonosBadge"><img src="https://ocahotels.com/images/bonos-regalo-<?= $lang ?>.png" class="img-responsive" alt='<?php echo _("BONOS REGALO") ?>' title='<?php echo _("BONOS REGALO") ?>'>
+            </div>
+          <?php } else{}?>
+<!-- bonos regalo BADGE ENDS -->
                         <h3><?php echo $hotel["longNameTemp"]?></h3>
 
                         <div class="txt-200 mg-b-10 " style="color:#FFF">

@@ -1,9 +1,19 @@
+<?php 
+// inicializar idioma
+  $mybonopre = _("BONOS REGALO");
+  $mybono = strtolower($mybonopre)
+    
+  
+  
+
+?>
+
 <style type="text/css">
     
    .pet{
     text-align: left;
     position: absolute;
-    right: 0;
+    left:10%;
     bottom: 0;
     }
     .pet img{
@@ -15,7 +25,7 @@
     .pet{
     text-align: left;
     position: absolute;
-    right: 0;
+  left:10%;
     bottom: 0;
     }
     .pet img{
@@ -28,7 +38,7 @@
 .pet{
     text-align: left;
     position: absolute;
-    right: 0;
+    left:10%;
     bottom: 0;
     }
      .pet img{
@@ -41,7 +51,7 @@
 .pet{
     text-align: left;
     position: absolute;
-    right: 0;
+     left:10%;
     bottom: 0;
     }
     .pet img{
@@ -53,13 +63,26 @@
       .pet{
     text-align: left;
     position: absolute;
-    right: -10%;
+     left:10%;
     bottom: 0;
     }
         .pet img{
             display: inline-block;
         max-width: 180px;
-    }}
+    }
+    
+          .bonosBadge{
+    text-align: left;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    }
+        .bonosBadge img{
+            display: inline-block;
+        max-width: 180px;
+    }
+
+}
 
 
 
@@ -129,19 +152,31 @@ document.getElementsByTagName('body')[0]).appendChild(pl);
                </div>
             <?php                         
                } ?>
-
+            <div class="pet">
            <?php if ($datos['petfriendly'] == 1){
                if ($datos['duerming'] == 1){
-                   ?>   <div class="col-xs-12 pet"> <a href="#nosinti"><img src="https://ocahotels.com/images/duerming-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'></a>
+                   ?>   <div class="col-xs-6 col-sm-12"> <a href="#nosinti"><img src="https://ocahotels.com/images/duerming-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'></a>
                        </div><?php
                }
                else{ ?> 
-                  <div class="col-xs-12 pet"> <a href="#nosinti"><img src="https://ocahotels.com/images/oca-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'></a>
+                  <div class="col-xs-6 col-sm-12"> <a href="#nosinti"><img src="https://ocahotels.com/images/oca-mascotas.png" class="img-responsive" alt='<?php echo _("Este establecimiento admite mascotas") ?>' title='<?php echo _("Este establecimiento admite mascotas") ?>'></a>
                        </div><?php
                    
                    
                }?>
           <?php }?>
+            
+            <!-- PET FRIENDLY BADGE ENDS -->
+
+<!-- bonos regalo BADGE -->
+ <?php if ($datos['bonosregalo'] == 1){
+     
+     ?>
+
+<div class="col-xs-6 col-sm-12"><a href="<?= preg_replace('/[[:space:]]+/', '-', $mybono);?>"><img src="https://ocahotels.com/images/bonos-regalo-blank.png" class="img-responsive" alt='<?php echo _("BONOS REGALO") ?>' title='<?php echo _("BONOS REGALO") ?>'></a>
+            </div>
+          <?php } else{}?>
+<!-- bonos regalo BADGE ENDS --></div>
              <div class="carousel-caption">
                  <div class="title-box">
                     <h2>
