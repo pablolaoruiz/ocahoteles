@@ -87,6 +87,37 @@
                         "content" =>  GestionTemplates::requireToVar ($dir_name . "/contenido/" . $basenombre.'/eventos_texto1_en.html')
                     
                 ],
+                
+                
+                                 "restauracion" => [
+                    
+                        "titulo" => "Restauración",
+                        "meta_titulo" => "Restaurante El Galeón en Oca Villa de Avilés",
+                        "meta_descripcion" => "Conoce Avilés a través del paladar, descubriendo la más rica gastronomía asturiana. En Oca Villa de Avilés podrás probar una amplia selección de platos dentro del restaurante El Galeón. ",
+                        "seccion_titulo" => "Restauración",
+                        "seccion_descripcion" => "",
+                        "lang" => "",
+                        "slug" => "restauracion",
+                        "content" =>  GestionTemplates::requireToVar ($dir_name . "/contenido/" . $basenombre.'/restauracion_texto1_es.html')
+                    ],
+            
+                "restaurant" => [
+                    
+                        "titulo" => "Restaurant",
+                        "meta_titulo" => "El Galeon restaurant in Oca Villa de Avilés
+
+",
+                        "meta_descripcion" => "Get to know Avilés through the palate, discovering the richest Asturian gastronomy. In Oca Villa de Avilés you can try a wide selection of dishes inside El Galeón restaurant.",
+                        "seccion_titulo" => "Restaurant",
+                        "seccion_descripcion" => "",
+                        "lang" => "en",
+                        "slug" => "restaurant",
+                        "origen" => "restauracion",
+                        "content" =>  GestionTemplates::requireToVar ($dir_name . "/contenido/" . $basenombre.'/restauracion_texto1_en.html')
+                    
+                ],
+                
+                
                    /*"entorno" => [
                     
                         "titulo" => "Entorno",
