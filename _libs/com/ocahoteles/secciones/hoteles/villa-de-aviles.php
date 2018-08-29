@@ -118,11 +118,11 @@
                 ],
                 
                 
-                   /*"entorno" => [
+                   "entorno" => [
                     
                         "titulo" => "Entorno",
-                        "meta_titulo" => "Hotel en Villa de Sarria a 5 minutos del centro de la ciudad.",
-                        "meta_descripcion" => "Duerming Villa de Sarria es ideal para hacer el Camino de Santiago Francés en sus últimas etapas, con servicio especial para peregrinos y muy bien conectado con resto de ciudades gallegas. ",
+                        "meta_titulo" => "Hotel en Villa de Avilés, junto al Centro Cultural Internacional Niemeyer.",
+                        "meta_descripcion" => "El Hotel Oca Villa de Avilés se encuentra a 30 minutos de Oviedo y de Gijón y en pleno centro de la ciudad de Avilés.",
                         "seccion_titulo" => "Entorno",
                         "seccion_descripcion" => "",
                         "lang" => "",
@@ -133,8 +133,8 @@
                 "environment" => [
                     
                         "titulo" => "Environment",
-                        "meta_titulo" => "Hotel in Villa de Sarria 5 minutes from the city center.",
-                        "meta_descripcion" => "Duerming Villa de Sarria is ideal to make the Camino de Santiago Francés in its last stages, with special service for pilgrims and very well connected with other Galician cities.",
+                        "meta_titulo" => "Hotel in Villa de Avilés, next to the Niemeyer International Cultural Center.",
+                        "meta_descripcion" => "The Oca Villa de Aviles Hotel is located 30 minutes from Oviedo and Gijón and in the heart of the city of Avilés.",
                         "seccion_titulo" => "Environment",
                         "seccion_descripcion" => "",
                         "lang" => "en",
@@ -142,7 +142,7 @@
                         "origen" => "entorno",
                         "content" =>  GestionTemplates::requireToVar ($dir_name . "/contenido/" . $basenombre.'/entorno_texto1_en.html')
                     
-                ],*/
+                ],
                 
            
      
