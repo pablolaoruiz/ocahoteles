@@ -19,7 +19,14 @@
        Terrace and garden</li>
     <li>
         Gymnasium</li>
-</ul><br>
+</ul>
+<br> <br>
+
+<h4> Your bike also has a place in Oca Rocallaura: </h4>
+<h2 style = "color: black! important"> Parking service for bicycle bikes. </h2> <br>
+
+<p> Fans of <b> bike routes </b> will find many nature routes in Rocallaura, an excellent way to get to know the region. </p> <p> During your stay, you can request bike service park with which to keep it safe. </p> <br>
+<p> We also have <b> bike rental </b> at € 20 all day and € 12.5 half a day. </p>
 <p>
     Here you can also enjoy your holidays with your family! <strong>Your pet is welcome</strong> to Oca Rocallaura, we are 100% sure that they will be enthusiastic to spend easing days in the midst of nature.  </p><p>And if what you are looking for is a place to host seminars or work meetings, at Oca Rocallaura we have meet and banquet halls.</p>
 

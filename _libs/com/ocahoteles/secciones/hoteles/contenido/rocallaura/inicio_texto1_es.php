@@ -11,8 +11,8 @@
     
 <p><strong>Oca Rocallaura ****</strong>, ubicado en un encantador entorno natural, rodeado de vegetación y frondosas montañas, es el hotel ideal para pasar unos días de <strong>desconexión y relax</strong> en plena naturaleza.</p>
 <p>Nos encontramos en Rocallaura, una pequeña población en la región leridana de Urgell.</p>
-
-<h2>El alojamiento</h2>
+<br>
+<h2>El alojamiento</h2><br>
 <p>
     El <strong>edificio data de 1908</strong>, más de 100 años de historia que se pueden apreciar en sus elementos arquitectónicos. Oca Rocallaura logra mantener un equilibrio entre <strong>tradición y vanguardia</strong> en cada uno de sus detalles, siempre procurando las mayores comodidades y servicios a disposición de los huéspedes. </p>
 <p>El hotel lo conforman dos espacios diferenciados, por un lado el alojamiento hotelero con <strong>82 habitaciones</strong>, incluyendo nueve junior suites y seis suites, y por otro, la zona de relax donde se pueden disfrutar de circuitos, tratamientos corporales, faciales, masajes, etc. Entre sus espacios dispone de:  </p>
@@ -30,6 +30,14 @@
     Además, todos los huéspedes tienen a su disposición una <strong>recepción abierta al público las 24 horas</strong> con atención multilingüe y aparcamiento gratuito. </p>
 <p>
 Cabe destacar su sala de reuniones acondicionada para el desarrollo de encuentros de negocios y seminarios, y el salón de celebraciones para la organización de eventos. </p>
+<br><br>
+
+<h4>Tu bicicleta también tiene cabida en Oca Rocallaura:</h4>
+<h2 style="color: black !important">Servicio de aparca bicis grauito.</h2><br>
+
+<p>Los aficionados a las <b>rutas en bicicleta</b> encontrarán en Rocallaura numerosos recorridos por la naturaleza, una excelente forma de conocer la región.</p><p>Durante tu estancia, podrás solicitar el servicio bike park con el que mantenerla a buen recaudo.</p><br>
+<p>También disponemos de <b>alquiler de bicicletas</b> a 20€ todo el día y 12,5€ medio día.</p>
+
 <hr>
 <div class="col-xs-12" id="nosinti"><br><br>
 
