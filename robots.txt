@@ -3,3 +3,6 @@ User-Agent: *
 Disallow: /_old
 Disallow: /cron
 Disallow: /docs
+Disallow: /rse/wp-admin
+Disallow: /upload
+Disallow: /hoteles/espana/lugo/panton/oca-augas-santas/upload

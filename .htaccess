@@ -253,6 +253,8 @@ RedirectMatch 301 	^/h/2997/golf$			http://ocahotels.com/hoteles/espana/lugo/pan
 
 RedirectMatch 301 	^/nuestros-hoteles/3278/grand-oca-maragogi-beach--leisure-resort$			http://ocahotels.com/hoteles/brasil/maragogi/alagoas/oca-maragogi/
 
+RedirectMatch 301 	^/h/3278/alta-oca$			http://ocahotels.com/hoteles/brasil/maragogi/alagoas/oca-maragogi/
+
 RedirectMatch 301 	^/nuestros-hoteles/2997/oca-augas-santas-balneario-golf-resort$			 http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/
 
 RedirectMatch 301 	^/puerta-del-camino/el-hotel$			 http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
@@ -267,6 +269,8 @@ RedirectMatch 301 	^/nuestros-hoteles/1890/oca-villa-de-sarria-hotel$			http://o
 
 RedirectMatch 301 	^/nuestros-hoteles/4117/estacion-de-montaa-oca-nova-manzaneda$			http://ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/
 
+RedirectMatch 301 	^/h/4117/inicio$			http://ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/
+
 RedirectMatch 301 	^/maragogi/inicio$			http://ocahotels.com/hoteles/brasil/maragogi/alagoas/oca-maragogi/
 
 RedirectMatch 301 	^/maragogi/home/$			http://ocahotels.com/en/hoteles/brasil/maragogi/alagoas/oca-maragogi/
@@ -275,7 +279,7 @@ RedirectMatch 301 	^/puerta-del-camino/inicio$			http://ocahotels.com/hoteles/es
 
 RedirectMatch 301 	^/hoteles-apartamentos-oca/1890/hotel-duerming-villa-de-sarria$			http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
 
-RedirectMatch 301 ^/rio-pambre/inicio/(.*)$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
+RedirectMatch 301 ^/rio-pambre/(.*)$ http://ocahotels.com/hoteles/espana/lugo/palas-de-rei/oca-rio-pambre/
 
 RedirectMatch 301 ^/ipanema/es/(.*)$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
 
@@ -295,10 +299,13 @@ RedirectMatch 301 ^/augas-santas$ http://ocahotels.com/hoteles/espana/lugo/panto
 
 RedirectMatch 301 ^/augas-santas/ http://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas?
 
-RedirectMatch 301 ^/maragogi/$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
-RedirectMatch 301 ^/maragogi$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
-RedirectMatch 301 /maragogi/$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
-RedirectMatch 301 /maragogi$ http://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi
+
+
+RewriteRule hoteles/espana/lugo/panton/oca-augas-santas/actividad.php$ https://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/entorno [R=301,L]
+RewriteRule ^maragogi/(.*) https://ocahotels.com/hoteles/brasil/maragogi/maragogi/oca-maragogi/ [R=301,L]
+
+
+
 
 RedirectMatch 301 ^/ipanema/$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
 RedirectMatch 301 ^/ipanema$ http://ocahotels.com/hoteles/espana/pontevedra/vigo/oca-ipanema/
@@ -371,6 +378,7 @@ RedirectMatch 301 ^/oca-villa-de-sarria-hotel$ http://ocahotels.com/hoteles/espa
 RedirectMatch 301 ^/hotelocavilladesarria/(.*)$ http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
 
 RedirectMatch 301 	^/h/1890/inicio$			 http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
+RedirectMatch 301 	^/h/1890/alta-oca$			 http://ocahotels.com/hoteles/espana/lugo/sarria/oca-villa-de-sarria/
 
 RedirectMatch 301 ^/casas-reales(.*)$ http://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-casas-reales/
 
@@ -401,34 +409,68 @@ RedirectMatch 301 /portonovo-pico$ http://ocahotels.com/hoteles/espana/pontevedr
 
 
 RedirectMatch 301 ^/sanxenxo-residence$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
+RedirectMatch 301 /sanxenxo-residence/galeria$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
+RedirectMatch 301 /sanxenxo-residence/inicio$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
+RedirectMatch 301 /sanxenxo-residence/contacto$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
+RedirectMatch 301 /sanxenxo-residence/entorno$ https://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/entorno
+RedirectMatch 301 /sanxenxo-residence/el-hotel$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
 RedirectMatch 301 /sanxenxo-residence$ http://ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-sanxenxo-residence/
 
 RedirectMatch 301 ^/sete-artes$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/
 RedirectMatch 301 /sete-artes$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/
+RedirectMatch 301 /sete-artes/alta-oca$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/
+RedirectMatch 301 /sete-artes/situacion.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/entorno
+RedirectMatch 301 /sete-artes/sete-artes-gal/(.*)$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/
+RedirectMatch 301 /sete-artes/sete-artes-in/(.*)$ https://ocahotels.com/en/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/
+RedirectMatch 301 /sete-artes/servicios.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+
+RedirectMatch 301 /sete-artes/inicio$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/index.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/servicios.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/habitaciones.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/habitaciones-ga.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/galeria/galeria.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/galeria$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/el-hotel$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/contacto$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/contacto.html$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/ 
+RedirectMatch 301 /sete-artes/entorno$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-sete-artes/entorno
 
 RedirectMatch 301 ^/nuestros-hoteles$ http://ocahotels.com/#hoteles
 RedirectMatch 301 /nuestros-hoteles$ http://ocahotels.com/#hoteles
 
 RedirectMatch 301 ^/hoteles$ http://ocahotels.com/#hoteles
 RedirectMatch 301 /hoteles$ http://ocahotels.com/#hoteles
+RedirectMatch 301 /hoteles/es$ http://ocahotels.com/#hoteles
+
+RedirectMatch 301 /hotel_oca_rio_azor/(.*)$ http://ocahotels.com/#hoteles
 
 RedirectMatch 301 ^/manzaneda/(.*)$ http://ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/
 
 
 
-RedirectMatch 301 /apartamentos-cruceiro-do-galo$ http://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-apartamentos-cruceiro-do-galo/
-RedirectMatch 301 ^/apartamentos-cruceiro-do-galo$ http://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-apartamentos-cruceiro-do-galo/
+RedirectMatch 301 /apartamentos-cruceiro-do-galo$ https://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-apartamentos-cruceiro-do-galo/
+RedirectMatch 301 ^/apartamentos-cruceiro-do-galo$ https://www.ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-apartamentos-cruceiro-do-galo/
 
-RedirectMatch 301 ^/san-vicente$ http://ocahotels.com/hoteles/espana/pontevedra/o-grove/oca-san-vicente/
-RedirectMatch 301 /san-vicente$  http://ocahotels.com/hoteles/espana/pontevedra/o-grove/oca-san-vicente/
+RedirectMatch 301 ^/san-vicente$ https://ocahotels.com/hoteles/espana/pontevedra/o-grove/oca-san-vicente/
+RedirectMatch 301 /san-vicente$  https://ocahotels.com/hoteles/espana/pontevedra/o-grove/oca-san-vicente/
 
-RedirectMatch 301 ^/puerta-del-camino$ http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
-RedirectMatch 301 /puerta-del-camino$  http://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+RedirectMatch 301 ^/puerta-del-camino$ https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+RedirectMatch 301 /puerta-del-camino$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+RedirectMatch 301 /puerta-del-camino/galeria$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+RedirectMatch 301 /puerta-del-camino/contacto$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/
+RedirectMatch 301 /puerta-del-camino/celebraciones$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/bodas
+RedirectMatch 301 /puerta-del-camino/eventos$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/bodas
+RedirectMatch 301 /puerta-del-camino/restauracion$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/restauracion
+RedirectMatch 301 /puerta-del-camino/entorno$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/entorno
+RedirectMatch 301 /puerta-del-camino/oferta2/(.*)$  https://ocahotels.com/hoteles/espana/a-coruna/santiago-de-compostela/oca-puerta-del-camino/ofertas
 
-RedirectMatch 301 ^/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/4117/(.*)$ http://www.ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda
+RedirectMatch 301 ^/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda/4117/(.*)$ https://www.ocahotels.com/hoteles/espana/ourense/pobra-de-trives/oca-manzaneda
 
-RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/golf_competiciones.php             http://www.ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/torneos-golf
-RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/golf_elcampo.php           http://www.ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/golf
+RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/golf_competiciones.php             https://www.ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/torneos-golf
+RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/golf_competicion.php             https://www.ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/torneos-golf
+RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/golf_elcampo.php           https://www.ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/golf
+RedirectMatch 301 ^/hoteles/espana/lugo/panton/oca-augas-santas/listarOfertas.php?(.*)$    https://ocahotels.com/hoteles/espana/lugo/panton/oca-augas-santas/ofertas
 
 #301 Redirect Entire Directory.
 RewriteRule  ^/hotelocajusto/(.*)$ http://www.ocahotels.com/hoteles/espana/pontevedra/sanxenxo/oca-justo/$1 [R=301,NC,L]
