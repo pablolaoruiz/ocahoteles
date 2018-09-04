@@ -1,9 +1,36 @@
-<?php include(getTmpl("tmpl_buscador_horizontal","main")) ?>
+<header class="intro-header">
+    
+    <div id="carousel-home" class="carousel slide " data-ride="carousel" data-interval="4000">
+
+        <div class="carousel-inner" role="listbox">
+            
+            
+                <div class="item active">
+                   <div class="row ">
+                       <div class="col-md-12 fill-40 fill-before-shadow" style="background-image: url('http://ocahotels.com/images/partners/0001-ocapartners.jpg')"></div>
+                   </div>
+               </div>
+         
+            
+            <div class="carousel-caption">
+                <h2 class="text-uppercase txt-220"><img src="https://ocahotels.com/images/partners/oca-partners.png" alt="OCA PARTNERS" class="img-responsive" style="display: block; margin: 0 auto;"></h2>
+              
+            </div>
+            
+        </div>
+        
+      
+
+    </div>
+    
+</header>
+    
+    <?php include(getTmpl("tmpl_buscador_horizontal","main")) ?>
 <section class="pd-t-50 pd-b-50 bck-color-gris">
     <div class="container content-interior">
         <div class="row">
             <div class="col-xs-12">
-                <h3><?php echo _("Agentes")?></h3>
+                <h3>OCA Partners</h3>
                 
                 <p>
                     En <strong>Oca Hotels</strong> trabajamos constantemente para mejorar la relación con nuestros colaboradores, es por ello que mejoramos nuestro área de acceso para Agentes de Viajes. </p>

@@ -108,7 +108,7 @@ RewriteRule ^en/duerming/  /duerming/index.php?lang=en
 
 RewriteRule ^en/atencion-al-cliente/  /atencion-al-cliente/index.php?lang=en
 
-RewriteRule ^en/agentes/  /agentes/index.php?lang=en
+RewriteRule ^en/partners/  /partners/index.php?lang=en
 
 RewriteRule ^en/empresas/  /empresas/index.php?lang=en
 

@@ -63,7 +63,7 @@ if ($language == 'ca'){
             <div class="col-xs-6 col-sm-6 col-md-2 txt-a-c-md  mg-xs-b-30">
                 <h4><?php echo _("Profesionales")?></h4>
                 <ul>
-                    <li><a href="<?php echo $ROOT.$ROOT_LANG?>agentes/"><?php echo _("Agentes")?></a></li>
+                    <li><a href="<?php echo $ROOT.$ROOT_LANG?>partners/"><?php echo _("Partners")?></a></li>
                     <li><a href="<?php echo $ROOT.$ROOT_LANG?>empresas/"><?php echo _("Empresas")?></a></li>
                 </ul>
             </div>

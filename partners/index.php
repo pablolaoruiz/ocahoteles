@@ -6,11 +6,11 @@ if ($ROOT_LANG ==''){$tmplCuerpo = "tmpl_normal";}
     else {
         $tmplCuerpo = "tmpl_normal_en";
     };
-    $seccion = "agentes";
+    $seccion = "partners";
     
     $class_menu = "menu-interior";
-    $titulo =  "Agentes";
-    $descripcion =   "Agentes";
+    $titulo =  "Partners";
+    $descripcion =   "OCA Partners";
 
     require(getTmpl('tmpl_main','main'));
     
