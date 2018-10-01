@@ -1,14 +1,17 @@
 <?php
+
+// Turn off all error reporting
+error_reporting(0);
 //session_start();
 /** Configuración **/
  $appConfig = parse_ini_file(dirname(__FILE__) . '/_config/config_ini.inc');
 
 /** Debug **/
- if($appConfig['SHOW_NOTICES']) {
+ /**if($appConfig['SHOW_NOTICES']) {
     error_reporting(E_ALL);
  } else {	
     error_reporting(E_ALL ^ E_NOTICE);
- }
+ }**/
 
 $ROOT = $appConfig['ROOT'];
 $TEMPLATE = $appConfig['TEMPLATE'];

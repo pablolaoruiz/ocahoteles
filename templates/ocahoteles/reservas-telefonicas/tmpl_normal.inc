@@ -34,6 +34,7 @@
                      <li>V.V. Duerming Sanxenxo Residences:<br class="visible-xs"> (+34) 986 72 06 07</li>
                      <li>Oca Aldeaduero:<br class="visible-xs"> (+34) 923 51 31 75</li>
                      <li>Oca Rua Travesa:<br class="visible-xs"> (+34) 687 16 30 02</li>
+                       <li>Oca Villa de Avilés:<br class="visible-xs"> (+34) 985 526 116</li>
                  </ul>
                  
                

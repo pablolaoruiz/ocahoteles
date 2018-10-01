@@ -74,7 +74,7 @@ class Hoteles extends BBDD_PDO {
     public function getHotelesBuscador() {
         
         $parametros = [];
-        $sql_hoteles = "SELECT * , CONCAT(longNameTemp , ' - ', city ,', ', province) as nombre FROM products where activo=1 AND province!='Maragogi' ORDER BY type DESC, quality DESC,longName ASC";
+        $sql_hoteles = "SELECT * , CONCAT(longName , ' - ', city ,', ', province) as nombre FROM products where activo=1 AND province!='Maragogi' ORDER BY type DESC, quality DESC,longName ASC";
         $hoteles = $this->db_list($sql_hoteles,$parametros);
         $hoteles_result = [];
         foreach($hoteles as $hotel) {
@@ -95,6 +95,7 @@ class Hoteles extends BBDD_PDO {
      * @param type $filtro
      * @return string
      */
+    
     public function buscarHotel($filtro) {
         global $ROOT;
         global $ROOT_LANG;
@@ -102,6 +103,7 @@ class Hoteles extends BBDD_PDO {
         $parametros = [];
         $sql_hoteles = "SELECT * , CONCAT(longNameTemp , ' - ', city ,', ', province) as nombre FROM products where activo=1 "
                 . "AND (longName LIKE '%" . $filtro. "%' OR city LIKE '%" . $filtro. "%' OR province LIKE '%" . $filtro. "%')"
+
                 . " ORDER BY type DESC, quality DESC,longName ASC";
         
         $hoteles = $this->db_list($sql_hoteles,$parametros);

@@ -32,7 +32,7 @@
                         "content" => GestionTemplates::requireToVar ($dir_name . "/contenido/" . $basenombre.'/descripcion_en.html')
                     ],
                 
-                  "station" => [
+                  "estacion_gl" => [
                         "titulo" => "A estación",
                         "meta_titulo" => "Estación Oca Manzaneda, Esquí, Bike Park, sendeirismo e multi-aventura.",
                         "meta_descripcion" => "Un enclave perfecto para deportes con pistas de tenis, fútbol, karting, bicicleta de montaña, piscina climatizada, multiaventura ...",

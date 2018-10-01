@@ -11,7 +11,7 @@ $operacion = $_REQUEST['operacion'];
 
 $hoteles = $ctrlHoteles->getHotelesBuscador();
 $resultado =[];
-foreach($hoteles as $hotel) {
+foreach($hoteles as $hotel){
     $hotel_res['nombre'] = $hotel['nombre'];
     $hotel_res['id'] = $hotel['neobookingid'];
     $resultado[] = $hotel_res;

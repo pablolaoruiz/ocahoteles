@@ -235,6 +235,7 @@ RewriteRule  ^CPHDG/?$                                      alta-persona/index.p
 RewriteRule  ^FUTGAL/?$                                      alta-persona/index.php?colectivo=FUTGAL
 RewriteRule  ^COEAC/?$                                      alta-persona/index.php?colectivo=COEAC
 RewriteRule  ^MEDIAMARKT/?$                                      alta-persona/index.php?colectivo=MEDIAMARKT
+RewriteRule  ^COFIGA/?$                                      alta-persona/index.php?colectivo=COFIGA
 
 #redirects 2018
 RedirectMatch 301 ^/Santo-domingo-plaza/el-hotel$ http://ocahotels.com/hoteles/espana/asturias/oviedo/oca-santo-domingo-plaza/
